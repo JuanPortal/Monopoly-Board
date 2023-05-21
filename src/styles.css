@@ -9,7 +9,9 @@
 
 #root {
     width: 100vw;
-    height: 100vh;
+    max-width: 100vw;
+    /* height: 100vh; */
+    min-height: 100vh;
     background: linear-gradient(#e664e0, #9198e5);
     display: flex;
     flex-direction: column;
@@ -228,7 +230,7 @@ main {
     }
 }
 
-@media screen and (min-width: 360px) and (max-width: 800px) {
+@media screen and (min-width: 360px) and (max-width: 459px) {
     h1 {
         font-size: 35px;
     }
@@ -278,5 +280,274 @@ main {
 
     .card .tag {
         font-size: 5px;
+    }
+}
+
+@media screen and (min-width: 460px) and (max-width: 559px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    main {
+        width: calc(12*36px);
+        height: calc(12*36px);
+    }
+
+    .row {
+        width: calc(10.5*36px);
+    }
+
+    .card {
+        width: 36px;
+        height: 54px;
+        border: 1px solid #000;
+        border-right: 0px;
+    }
+    
+    .corner {
+        border-right: 1px solid #000;
+        width: 54px;
+    }
+
+    .card .color {
+        border-bottom: 1px solid #000;
+        font-size: 19px;
+    }
+
+    .icon .color {
+        border: none;
+    }
+    
+    .luck .color {
+        border: none;
+    }
+
+    .card .name {
+        font-size: 6px;
+        padding: 1px;
+    }
+
+    .corner .name {
+        font-size: 13px;
+    }
+
+    .card .tag {
+        font-size: 7px;
+    }
+}
+
+@media screen and (min-width: 560px) and (max-width: 659px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    main {
+        width: calc(12*44px);
+        height: calc(12*44px);
+    }
+
+    .row {
+        width: calc(10.5*44px);
+    }
+
+    .card {
+        width: 44px;
+        height: 66px;
+        border: 1px solid #000;
+        border-right: 0px;
+    }
+    
+    .corner {
+        border-right: 1px solid #000;
+        width: 66px;
+    }
+
+    .card .color {
+        border-bottom: 1px solid #000;
+        font-size: 23px;
+    }
+
+    .icon .color {
+        border: none;
+    }
+    
+    .luck .color {
+        border: none;
+    }
+
+    .card .name {
+        font-size: 8px;
+        padding: 1px;
+    }
+
+    .corner .name {
+        font-size: 18px;
+    }
+
+    .card .tag {
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width: 660px) and (max-width: 759px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    main {
+        width: calc(12*54px);
+        height: calc(12*54px);
+    }
+
+    .row {
+        width: calc(10.5*54px);
+    }
+
+    .card {
+        width: 54px;
+        height: 81px;
+        border: 1px solid #000;
+        border-right: 0px;
+    }
+    
+    .corner {
+        border-right: 1px solid #000;
+        width: 81px;
+    }
+
+    .card .color {
+        border-bottom: 1px solid #000;
+        font-size: 34px;
+    }
+
+    .icon .color {
+        border: none;
+    }
+    
+    .luck .color {
+        border: none;
+    }
+
+    .card .name {
+        font-size: 11px;
+        padding: 1px;
+    }
+
+    .corner .name {
+        font-size: 18px;
+    }
+
+    .card .tag {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 760px) and (max-width: 859px) {
+    h1 {
+        font-size: 55px;
+    }
+
+    main {
+        width: calc(12*62px);
+        height: calc(12*62px);
+    }
+
+    .row {
+        width: calc(10.5*62px);
+    }
+
+    .card {
+        width: 62px;
+        height: 93px;
+        border: 1px solid #000;
+        border-right: 0px;
+    }
+    
+    .corner {
+        border-right: 1px solid #000;
+        width: 93px;
+    }
+
+    .card .color {
+        border-bottom: 1px solid #000;
+        font-size: 37px;
+    }
+
+    .icon .color {
+        border: none;
+    }
+    
+    .luck .color {
+        border: none;
+    }
+
+    .card .name {
+        font-size: 12px;
+        padding: 1px;
+    }
+
+    .corner .name {
+        font-size: 18px;
+    }
+
+    .card .tag {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 860px) and (max-width: 959px) {
+    #root {
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    main {
+        width: calc(12*70px);
+        height: calc(12*70px);
+    }
+
+    .row {
+        width: calc(10.5*70px);
+    }
+
+    .card {
+        width: 70px;
+        height: 105px;
+        border: 1px solid #000;
+        border-right: 0px;
+    }
+    
+    .corner {
+        border-right: 1px solid #000;
+        width: 105px;
+    }
+
+    .card .color {
+        border-bottom: 1px solid #000;
+        font-size: 37px;
+    }
+
+    .icon .color {
+        border: none;
+    }
+    
+    .luck .color {
+        border: none;
+    }
+
+    .card .name {
+        font-size: 12px;
+        padding: 1px;
+    }
+
+    .corner .name {
+        font-size: 18px;
+    }
+
+    .card .tag {
+        font-size: 14px;
     }
 }
