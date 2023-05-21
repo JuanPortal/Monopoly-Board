@@ -7,7 +7,7 @@
     font-family: "Lato", sans-serif;
 }
 
-body {
+#root {
     width: 100vw;
     height: 100vh;
     background: linear-gradient(#e664e0, #9198e5);
@@ -15,6 +15,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 
 @media screen and (max-width: 359px) {
@@ -26,7 +27,7 @@ body {
     main {
         width: calc(12*26px);
         height: calc(12*26px);
-        background-color: #00000068;
+        background-color: #ffffff68;
         position: relative;
     }
 
@@ -87,7 +88,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .corner .color {
@@ -116,6 +117,7 @@ body {
         justify-content: center;
         align-items: center;
         text-align: center;
+        padding: 1px;
     }
 
     .corner .name {

@@ -7,8 +7,8 @@ library.add(fas, faToolbox, faMoneyCheckDollar, faTrain, faQuestion, faLightbulb
 
 export const Card = ({ type, color, icon, name, tag }) => {
   return (
-    <div className={`card ${type}`}>
-        <div className="color">
+    <div className={`card ${type}`} >
+        <div className="color" style={{backgroundColor: color}}>
           {
             icon ? <FontAwesomeIcon icon={`fa-solid fa-${icon}`} /> : ""
           }
