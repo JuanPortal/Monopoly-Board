@@ -17,7 +17,7 @@ body {
     align-items: center;
 }
 
-@media screen and (max-width: 369px) {
+@media screen and (max-width: 359px) {
     h1 {
         font-size: 35px;
         text-align: center;
@@ -84,22 +84,28 @@ body {
         width: 100%;
         height: 25%;
         border-bottom: 1px solid #000;
-        background-color: #676767;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
     }
 
     .corner .color {
         border: none;
+        display: none;
         height: 0%;
     }
 
-    .icon .color, .luck .color {
+    .icon .color {
         order: 2;
-        height: 50%;
+        height: 45%;
         border: none;
     }
 
     .luck .color {
-        height: 75%;
+        order: 2;
+        height: 70%;
+        border: none;
     }
 
     .card .name {
@@ -110,7 +116,6 @@ body {
         justify-content: center;
         align-items: center;
         text-align: center;
-        background-color: #9198e5;
     }
 
     .corner .name {
@@ -118,8 +123,13 @@ body {
         font-size: 10px;
     }
     
-    .icon .name, .luck .name {
-        height: 25%;
+    .icon .name {
+        height: 30%;
+        order: 1;
+    }
+
+    .luck .name {
+        height: 40%;
         order: 1;
     }
 
@@ -130,7 +140,6 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #e664e0;
     }
 
     .corner .tag {
@@ -146,6 +155,10 @@ body {
     }
 
     .north .name, .north .tag {
+        transform: rotate(180deg);
+    }
+
+    .north .luck .color, .north .icon .color {
         transform: rotate(180deg);
     }
 }
