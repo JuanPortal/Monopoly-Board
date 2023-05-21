@@ -21,13 +21,13 @@
 }
 
 h1 {
-    font-size: 35px;
+    font-size: 65px;
     text-align: center;
 }
 
 main {
-    width: calc(12*26px);
-    height: calc(12*26px);
+    width: calc(12*68px);
+    height: calc(12*68px);
     background-color: #ffffff68;
     position: relative;
 }
@@ -36,7 +36,7 @@ main {
     position: absolute;
     display: flex;
     justify-content: center;
-    width: calc(10.5*26px);
+    width: calc(10.5*68px);
 }
 
 .row.north {
@@ -63,9 +63,9 @@ main {
 }
 
 .card {
-    width: 26px;
-    height: 39px;
-    border: 1px solid #000;
+    width: 68px;
+    height: 102px;
+    border: 2px solid #000;
     border-right: 0px;
     display: flex;
     flex-direction: column;
@@ -82,18 +82,18 @@ main {
 }
 
 .corner {
-    border-right: 1px solid #000;
-    width: 39px;
+    border-right: 2px solid #000;
+    width: 102px;
 }
 
 .card .color {
     width: 100%;
     height: 25%;
-    border-bottom: 1px solid #000;
+    border-bottom: 2px solid #000;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: 45px;
 }
 
 .corner .color {
@@ -117,7 +117,7 @@ main {
 .card .name {
     width: 100%;
     height: 50%;
-    font-size: 5px;
+    font-size: 13px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +127,7 @@ main {
 
 .corner .name {
     height: 100%;
-    font-size: 10px;
+    font-size: 28px;
 }
 
 .icon .name {
@@ -143,7 +143,7 @@ main {
 .card .tag {
     width: 100%;
     height: 25%;
-    font-size: 5px;
+    font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -466,63 +466,6 @@ main {
     .corner {
         border-right: 1px solid #000;
         width: 93px;
-    }
-
-    .card .color {
-        border-bottom: 1px solid #000;
-        font-size: 37px;
-    }
-
-    .icon .color {
-        border: none;
-    }
-    
-    .luck .color {
-        border: none;
-    }
-
-    .card .name {
-        font-size: 12px;
-        padding: 1px;
-    }
-
-    .corner .name {
-        font-size: 18px;
-    }
-
-    .card .tag {
-        font-size: 14px;
-    }
-}
-
-@media screen and (min-width: 860px) and (max-width: 959px) {
-    #root {
-        padding: 10px 0;
-    }
-
-    h1 {
-        font-size: 55px;
-    }
-
-    main {
-        width: calc(12*70px);
-        height: calc(12*70px);
-    }
-
-    .row {
-        width: calc(10.5*70px);
-    }
-
-    .card {
-        width: 70px;
-        height: 105px;
-        border: 1px solid #000;
-        border-right: 0px;
-    }
-    
-    .corner {
-        border-right: 1px solid #000;
-        width: 105px;
     }
 
     .card .color {
