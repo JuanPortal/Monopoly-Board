@@ -4,7 +4,7 @@ import { Board } from './Board'
 export const Monopoly = () => {
   return (
     <>
-      <h1>Monopoly Project</h1>
+      <h1>Monopoly Board</h1>
       <Board />
     </>
   )

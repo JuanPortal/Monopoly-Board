@@ -18,47 +18,175 @@
     gap: 50px;
 }
 
+h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+main {
+    width: calc(12*26px);
+    height: calc(12*26px);
+    background-color: #ffffff68;
+    position: relative;
+}
+
+.row {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: calc(10.5*26px);
+}
+
+.row.north {
+    flex-direction: row-reverse;
+    transform: rotate(180deg);
+}
+
+.row.east {
+    flex-direction: row-reverse;
+    transform: rotate(-90deg);
+    transform-origin: top right;
+}
+
+.row.south {
+    flex-direction: row-reverse;
+    bottom: 0;
+    right: 0;
+}
+
+.row.west {
+    flex-direction: row-reverse;
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+}
+
+.card {
+    width: 26px;
+    height: 39px;
+    border: 1px solid #000;
+    border-right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card:nth-of-type(6) {
+    background-color: #515050c9;
+}
+
+.card:last-of-type {
+    border-left: 0;
+}
+
+.corner {
+    border-right: 1px solid #000;
+    width: 39px;
+}
+
+.card .color {
+    width: 100%;
+    height: 25%;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.corner .color {
+    border: none;
+    display: none;
+    height: 0%;
+}
+
+.icon .color {
+    order: 2;
+    height: 45%;
+    border: none;
+}
+
+.luck .color {
+    order: 2;
+    height: 70%;
+    border: none;
+}
+
+.card .name {
+    width: 100%;
+    height: 50%;
+    font-size: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1px;
+}
+
+.corner .name {
+    height: 100%;
+    font-size: 10px;
+}
+
+.icon .name {
+    height: 30%;
+    order: 1;
+}
+
+.luck .name {
+    height: 40%;
+    order: 1;
+}
+
+.card .tag {
+    width: 100%;
+    height: 25%;
+    font-size: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corner .tag {
+    height: 0%;
+}
+
+.icon .tag {
+    order: 3;
+}
+
+.luck .tag {
+    height: 0%;
+}
+
+.north .name, .north .tag {
+    transform: rotate(180deg);
+}
+
+.north .luck .color, .north .icon .color {
+    transform: rotate(180deg);
+}
+
+.east .corner .name {
+    transform: rotate(90deg);
+}
+
+.west .corner .name {
+    transform: rotate(-90deg);
+}
+
 @media screen and (max-width: 359px) {
     h1 {
         font-size: 35px;
-        text-align: center;
     }
 
     main {
         width: calc(12*26px);
         height: calc(12*26px);
-        background-color: #ffffff68;
-        position: relative;
     }
 
     .row {
-        position: absolute;
-        display: flex;
-        justify-content: center;
         width: calc(10.5*26px);
-    }
-
-    .row.north {
-        flex-direction: row-reverse;
-        transform: rotate(180deg);
-    }
-
-    .row.east {
-        flex-direction: row-reverse;
-        transform: rotate(-90deg);
-        transform-origin: top right;
-    }
-
-    .row.south {
-        flex-direction: row-reverse;
-        bottom: 0;
-        right: 0;
-    }
-
-    .row.west {
-        flex-direction: row-reverse;
-        transform: rotate(90deg);
-        transform-origin: bottom left;
     }
 
     .card {
@@ -66,14 +194,6 @@
         height: 39px;
         border: 1px solid #000;
         border-right: 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        overflow: hidden;
-    }
-
-    .card:last-of-type {
-        border-left: 0;
     }
     
     .corner {
@@ -82,114 +202,78 @@
     }
 
     .card .color {
-        width: 100%;
-        height: 25%;
         border-bottom: 1px solid #000;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         font-size: 12px;
     }
 
-    .corner .color {
-        border: none;
-        display: none;
-        height: 0%;
-    }
-
     .icon .color {
-        order: 2;
-        height: 45%;
         border: none;
     }
-
+    
     .luck .color {
-        order: 2;
-        height: 70%;
         border: none;
     }
 
     .card .name {
-        width: 100%;
-        height: 50%;
         font-size: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
         padding: 1px;
     }
 
     .corner .name {
-        height: 100%;
         font-size: 10px;
-    }
-    
-    .icon .name {
-        height: 30%;
-        order: 1;
-    }
-
-    .luck .name {
-        height: 40%;
-        order: 1;
     }
 
     .card .tag {
-        width: 100%;
-        height: 25%;
         font-size: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .corner .tag {
-        height: 0%;
-    }
-
-    .icon .tag {
-        order: 3;
-    }
-
-    .luck .tag {
-        height: 0%;
-    }
-
-    .north .name, .north .tag {
-        transform: rotate(180deg);
-    }
-
-    .north .luck .color, .north .icon .color {
-        transform: rotate(180deg);
     }
 }
 
-@media screen and (min-width: 360px) and (max-width: 4000px) {      /* Redmi Note 11 360x800 */
+@media screen and (min-width: 360px) and (max-width: 800px) {
     h1 {
-        font-size: 50px;
+        font-size: 35px;
+    }
+
+    main {
+        width: calc(12*30px);
+        height: calc(12*30px);
     }
 
     .row {
-        width: calc(10.5*34px);
-    }
-    
-    .row.south .card:first-of-type {
-        border-right: 1px solid #000;
-        width: 51px;
+        width: calc(10.5*30px);
     }
 
     .card {
-        width: 34px;
-        height: 51px;
+        width: 30px;
+        height: 45px;
+        border: 1px solid #000;
+        border-right: 0px;
+    }
+    
+    .corner {
+        border-right: 1px solid #000;
+        width: 45px;
     }
 
     .card .color {
-        border-bottom: 1px solid #000;;
+        border-bottom: 1px solid #000;
+        font-size: 12px;
+    }
+
+    .icon .color {
+        border: none;
+    }
+    
+    .luck .color {
+        border: none;
     }
 
     .card .name {
         font-size: 5px;
+        padding: 1px;
+    }
+
+    .corner .name {
+        font-size: 10px;
     }
 
     .card .tag {

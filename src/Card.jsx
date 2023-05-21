@@ -9,9 +9,7 @@ export const Card = ({ type, color, icon, name, tag }) => {
   return (
     <div className={`card ${type}`} >
         <div className="color" style={{backgroundColor: color}}>
-          {
-            icon ? <FontAwesomeIcon icon={`fa-solid fa-${icon}`} /> : ""
-          }
+          {icon ? <FontAwesomeIcon icon={`fa-solid fa-${icon}`} /> : ""}
         </div>
         <div className="name">{name}</div>
         <div className="tag">{tag}</div>
