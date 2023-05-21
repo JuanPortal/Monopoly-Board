@@ -40,26 +40,37 @@ body {
     .row.north {
         top: 0;
         left: 0;
+        background-color: rgb(255, 255, 255);
     }
 
     .row.east {
         top: 0;
         right: 0;
+        background-color: rgb(253, 200, 200);
     }
 
     .row.south {
         flex-direction: row-reverse;
         bottom: 0;
         right: 0;
+        background-color: rgb(248, 124, 124);
+    }
+
+    .row.south .card:first-of-type {
+        border-right: 1px solid #000;
+        width: 39px;
+    }
+
+    .row.south .card:last-of-type {
+        border-left: 0;
     }
 
     .row.west {
         flex-direction: row-reverse;
-        bottom: 0;
-        left: 0;
-        /* transform: rotate(90deg); */
         transform: rotate(90deg);
-        /* transform-origin: bottom right; */
+        transform-origin: bottom left;
+        left: 0;
+        background-color: rgb(253, 46, 46);
     }
 
     .row.west .card:first-of-type {
@@ -68,8 +79,8 @@ body {
     }
 
     .card {
-        width: 30px;
-        height: 45px;
+        width: 26px;
+        height: 39px;
         border: 1px solid #000;
         border-right: 0px;
         display: flex;
