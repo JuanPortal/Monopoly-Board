@@ -4,7 +4,7 @@ import { Row } from './Row'
 export const Board = () => {
   return (
     <main>
-        <Row location="south" />
+        <Row location="west" />
     </main>
   )
 }

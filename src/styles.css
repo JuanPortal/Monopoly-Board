@@ -19,29 +19,57 @@ body {
 
 @media screen and (max-width: 359px) {
     h1 {
-        font-size: 50px;
+        font-size: 35px;
         text-align: center;
     }
 
+    main {
+        width: calc(12*26px);
+        height: calc(12*26px);
+        background-color: #00000068;
+        position: relative;
+    }
+
     .row {
+        position: absolute;
         display: flex;
         justify-content: center;
-        width: calc(12*26px);
+        width: calc(10.5*26px);
+    }
+
+    .row.north {
+        top: 0;
+        left: 0;
+    }
+
+    .row.east {
+        top: 0;
+        right: 0;
     }
 
     .row.south {
         flex-direction: row-reverse;
+        bottom: 0;
+        right: 0;
     }
 
-    .row.south .card:first-of-type {
+    .row.west {
+        flex-direction: row-reverse;
+        bottom: 0;
+        left: 0;
+        /* transform: rotate(90deg); */
+        transform: rotate(90deg);
+        /* transform-origin: bottom right; */
+    }
+
+    .row.west .card:first-of-type {
         border-right: 1px solid #000;
-        width: 40px;
+        width: 39px;
     }
 
     .card {
-        width: 26px;
-        height: 39px;
-        background-color: #00000068;
+        width: 30px;
+        height: 45px;
         border: 1px solid #000;
         border-right: 0px;
         display: flex;
@@ -82,17 +110,17 @@ body {
     }
 
     .row {
-        width: calc(12*30px);
+        width: calc(10.5*34px);
     }
     
     .row.south .card:first-of-type {
         border-right: 1px solid #000;
-        width: 45px;
+        width: 51px;
     }
 
     .card {
-        width: 30px;
-        height: 45px;
+        width: 34px;
+        height: 51px;
     }
 
     .card .color {
